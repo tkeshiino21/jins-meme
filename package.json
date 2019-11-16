@@ -1,0 +1,29 @@
+{
+    "name": "jins-meme-controller-library-sample",
+    "dependencies": {
+        "cordova-custom-config": "5.1.0",
+        "cordova-plugin-splashscreen": "5.0.2",
+        "cordova-plugin-whitelist": "1.3.3",
+        "monaca-plugin-monaca-core": "3.3.0",
+        "com.jins_jp.meme.plugin": "git+https://github.com/jins-meme/JinsMemeSDK-Plugin-Cordova",
+        "cordova.plugins.diagnostic": "git+https://github.com/dpa99c/cordova-diagnostic-plugin"
+    },
+    "cordova": {
+        "plugins": {
+            "cordova-custom-config": {},
+            "cordova-plugin-splashscreen": {},
+            "cordova-plugin-whitelist": {},
+            "monaca-plugin-monaca-core": {},
+            "com.jins_jp.meme.plugin": {},
+            "cordova.plugins.diagnostic": {}
+        }
+    },
+    "scripts": {
+        "monaca:preview": "npm run dev",
+        "dev": "browser-sync start -s www/ --watch --port 8080 --ui-port 8081"
+    },
+    "devDependencies": {
+        "browser-sync": "^2.26.7",
+        "cordova": "^9.0.0"
+    }
+}
